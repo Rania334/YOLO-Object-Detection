@@ -30,3 +30,13 @@ Real-time object detection using YOLOv3 and OpenCV. Detects and labels objects i
 ### Download YOLOv3 Weights
 Download the pre-trained YOLOv3 weights from the following link:  
 [Download YOLOv3 Weights](https://pjreddie.com/media/files/yolov3.weights)
+
+## Usage
+
+To run the object detection on a video stream, you can modify the `video_source` parameter. By default, it is set to `0`, which uses the webcam. If you want to process a specific video file, change `0` to the desired file path. 
+
+Example:
+
+```python
+video_processor = VideoProcessor(video_source="object detection test.mp4", output_file="output.avi")
+
